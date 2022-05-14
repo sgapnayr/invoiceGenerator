@@ -124,6 +124,7 @@ button:hover {
     transform: translateY(100%);
     opacity: .4;
     margin-top: -1.5rem;
+    margin-bottom: .5rem;
 }
 
 .transactions-div {
