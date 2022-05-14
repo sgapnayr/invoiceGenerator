@@ -1,6 +1,3 @@
-const buttonMow = document.querySelector('#buttonMow')
-const buttonTrimming = document.querySelector('#buttonTrimming')
-const buttonWash = document.querySelector('#buttonWash')
 const buttons = document.querySelectorAll('button')
 const transactionsDisp = document.querySelector('#transactions')
 const totalDisp = document.querySelector('#total')
@@ -38,7 +35,13 @@ buttons.forEach(button => {
 
             removeButton.addEventListener('click', () => {
                 transactionsDisp.removeChild(itemDiv)
-                total.pop(itemDiv)
+                for (let i = 0; i <= total.length; i++) {
+                    if (total[i] === listItem) {
+                        total.splice(i, 1);
+                    }
+                }
+                let newSum = sum - parseFloat(listItem.value)
+                totalDisp.innerText = newSum
             })
 
             transactionsDisp.append(itemDiv)
