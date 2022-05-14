@@ -82,8 +82,8 @@
 }
 
 button {
-    padding: .75rem 1.25rem;
-    margin: .5rem 1.5rem;
+    padding: .5rem .75rem;
+    margin: .2rem .4rem;
     border-radius: 5px;
     box-shadow: 1px 1px 10px rgba(255, 255, 255, .2);
     border: none;
@@ -94,6 +94,10 @@ button {
     border-right: 4px solid white;
     border-bottom: 4px solid var(--accent-color);
     border-left: 4px solid var(--blend2-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
 }
 
 button:hover {
