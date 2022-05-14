@@ -59,6 +59,14 @@
     border-top-right-radius: 5px;
 }
 
+.title-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
 /* Bottom-half */
 .bottom-half {
     width: 100%;
