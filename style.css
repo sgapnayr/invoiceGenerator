@@ -1,0 +1,173 @@
+/* Preface */
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+:root {
+    --primary-color:
+        #67cef6;
+    --blend1-color:
+        #88c5c5;
+    --blend2-color:
+        #a4bc9b;
+    --accent-color:
+        #c5b36a;
+    --background-color:
+        #101010;
+}
+
+/* Main */
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #262626;
+    color: white;
+}
+
+.body {
+    width: 80%;
+    height: 80vh;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+    box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.2);
+    padding: .25rem;
+}
+
+/* Top-half */
+.top-half {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(338deg, rgba(2, 0, 36, 1) 0%, rgba(43, 121, 9, 1) 35%, rgba(255, 255, 255, 1) 100%);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+/* Bottom-half */
+.bottom-half {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--background-color);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.button-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+    margin-top: -1rem;
+}
+
+button {
+    padding: .5rem .75rem;
+    margin: .5rem 1.5rem;
+    border-radius: 2px;
+    box-shadow: 1px 1px 10px rgba(255, 255, 255, .2);
+    border: none;
+    background: rgb(240, 240, 240);
+    cursor: pointer;
+    transition: 0.1s all ease-in-out;
+    border-top: 4px solid white;
+    border-right: 4px solid white;
+    border-bottom: 4px solid var(--accent-color);
+    border-left: 4px solid var(--blend2-color);
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 1px 1px 15px rgba(255, 255, 255, .4);
+}
+
+/* Transactions */
+.transactions-desc {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: .5rem;
+    transform: translateY(100%);
+    opacity: .4;
+    margin-top: -1.5rem;
+}
+
+.transactions-div {
+    width: 90%;
+    height: 25vh;
+    display: flex;
+    margin-top: .5rem;
+}
+
+#transactions {
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+ul {
+    overflow: scroll;
+    display: flex;
+    align-items: flex-start;
+}
+
+/* Total */
+.total-div {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.224);
+}
+
+.total-desc {
+    margin-top: .5rem;
+    flex: 1;
+}
+
+/* JS */
+.itemDiv {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+}
+
+.removeButton {
+    margin-left: .5rem;
+    opacity: .4;
+    font-weight: bold;
+    font-size: small;
+    cursor: pointer;
+}
+
+.sum {
+    font-weight: bold;
+    font-size: large;
+}
