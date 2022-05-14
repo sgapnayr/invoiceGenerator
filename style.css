@@ -82,6 +82,7 @@
 }
 
 button {
+    color: white;
     padding: .5rem .75rem;
     margin: .2rem .4rem;
     border-radius: 5px;
